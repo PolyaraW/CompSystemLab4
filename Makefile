@@ -6,7 +6,7 @@ LDFLAGS = --static
 all: exit
 
 debug: ASFLAGS += --gdwarf-2
-debug: task
+debug: lab4
 
 exit:
 	as $(ASFLAGS) -o exit.o -c exit.s

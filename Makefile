@@ -9,13 +9,13 @@ debug: ASFLAGS += --gdwarf-2
 debug: task
 
 exit:
- as $(ASFLAGS) -o exit.o -c exit.s
- ld $(LDFLAGS) -o exit exit.o
+	as $(ASFLAGS) -o exit.o -c exit.s
+	ld $(LDFLAGS) -o exit exit.o
 
-lab4:
- as $(ASFLAGS) -o lab4.o -c lab4.s
- ld $(LDFLAGS) -o lab4 lab4.o
+show_env:
+	as $(ASFLAGS) -o show_env.o -c show_env.s
+	ld $(LDFLAGS) -o show_env show_env.o
 
 clean:
- rm -f exit exit.o
- rm -f task task.o
+	rm -f exit exit.o
+	rm -f show_env show_env.o

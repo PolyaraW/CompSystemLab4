@@ -12,9 +12,9 @@ exit:
  as $(ASFLAGS) -o exit.o -c exit.s
  ld $(LDFLAGS) -o exit exit.o
 
-task:
- as $(ASFLAGS) -o task.o -c task.s
- ld $(LDFLAGS) -o task task.o
+lab4:
+ as $(ASFLAGS) -o lab4.o -c lab4.s
+ ld $(LDFLAGS) -o lab4 lab4.o
 
 clean:
  rm -f exit exit.o
